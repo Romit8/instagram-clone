@@ -50,7 +50,6 @@ const Home = () => {
       follow:"follow",
       cardImg: card1,
     },
-    // Add more card data objects here as needed
     {
       id: 2,
       profileImg: profile2,
@@ -58,7 +57,6 @@ const Home = () => {
       follow:"follow",
       cardImg: card2,
     },
-    // Add more card data objects as needed
     {
       id: 4,
       profileImg: profile4,
@@ -110,27 +108,27 @@ const Home = () => {
             </div>
             <ul>
               <li className="active">
-                <a href="">
+                <a href="/home">
                   <GoHomeFill /> Home
                 </a>
               </li>
               <li>
-                <a href="Mpo">
+                <a href="">
                   <AiFillHeart /> Like Post
                 </a>
               </li>
               <li>
-                <a href="/Pi">
+                <a href="">
                   <HiDocumentDownload /> Save
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="/video">
                   <RiVideoAddFill /> Videos
                 </a>
               </li>
               <li>
-                <a href="/git ">
+                <a href="/ ">
                   <HiOutlineLogout /> Logout
                 </a>
               </li>

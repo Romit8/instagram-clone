@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 const SignupForm = () => {
-  const navigate = useNavigate(); // Initialize navigate from useNavigate hook
+  const navigate = useNavigate(); 
   const [signup, setSignup] = useState({
     email: "",
     password: "",
@@ -12,7 +12,7 @@ const SignupForm = () => {
   const addUser = (event) => {
     event.preventDefault();
     console.log(signup);
-    localStorage.setItem("userSignup", JSON.stringify(signup)); // Save login details in localStorage
+    localStorage.setItem("userSignup", JSON.stringify(signup)); 
     alert("signup successfull");
     navigate("/login");
   };
@@ -23,6 +23,8 @@ const SignupForm = () => {
           <div className="alert_signup alert  ">
             <h2 className="alert alert-info text-center font-weight-bold ">
               Signup Form
+              <br />
+             <span><h6>Create User Account</h6> </span>
             </h2>
             <form method="post" onSubmit={addUser}>
               <div className="form-group">
@@ -44,7 +46,6 @@ const SignupForm = () => {
                   placeholder="Enter Password"
                   onChange={inputHandler}
                 />
-                {/* {error && <div className="text-danger mt-2">{error}</div>} */}
               </div>
               <div className="login-btn">
                 <button className="btn btn-info mt-4 login ">Signup</button>

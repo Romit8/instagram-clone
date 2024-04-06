@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.video-card video{
+    width: 200px;
+    height: 200px;
+}

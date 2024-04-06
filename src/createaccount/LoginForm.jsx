@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const LoginForm = () => {
-    const navigate = useNavigate(); // Initialize navigate from useNavigate hook
+    const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -28,7 +28,6 @@ const LoginForm = () => {
         storedSignup
       );
       if (checkLogin(storedEmail, storedPassword)) {
-        // Redirect or show success message
         alert("Login Successful");
         navigate("/home");
       } else {
@@ -46,7 +45,7 @@ const LoginForm = () => {
           <div className="alert_login alert  ">
             <h2 className="alert alert-info text-center font-weight-bold ">
               {" "}
-              Login Form{" "}
+              Login User{" "}
             </h2>
             <form method="post" onSubmit={addUser}>
               <div className="form-group">
